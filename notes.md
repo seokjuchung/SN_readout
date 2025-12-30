@@ -85,7 +85,6 @@ Error now gone, but SN binary is not being saved
 1. Checked that building `v2_00_00` works on SL7 evb. Try again on `nefertiti` after rsyncing `daq` area again
 1. Identified fcl for run19713, not certain if this will work as we need fake data
 1. Built new area with `https://github.com/SBNSoftware/sbndaq-artdaq/tree/ericSNtestSpack` branch using `v1_10_09`
-    * Still need to debug issue with `v2_00_00`
     * Build had issue with windriver, modified `sbndaq-suite`
         * Conflict between windriver version wanted in
         ```
@@ -93,8 +92,9 @@ Error now gone, but SN binary is not being saved
         depends_on("windriver@v16_05_00", when="@v2_01_00:")
         ```
         and specific requirements in conditional block
-    * `spack edit sbndaq-suite`
-    * `spack location -p sbndaq-suite`
+    * `spack edit sbndaq-suite` or
+    * `spack location -p sbndaq-suite` when readonly errors
+    * Issue with `v2_00_00` got resolved as well
 1. **Solved**
     * Issue of SN binaries not saving with SNcomm source code
     * Need separate `DumpSNBinary` entry to enable
