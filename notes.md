@@ -87,6 +87,12 @@ Error now gone, but SN binary is not being saved
 1. Built new area with `https://github.com/SBNSoftware/sbndaq-artdaq/tree/ericSNtestSpack` branch using `v1_10_09`
     * Still need to debug issue with `v2_00_00`
     * Build had issue with windriver, modified `sbndaq-suite`
+        * Conflict between windriver version wanted in
+        ```
+        depends_on("windriver@v12_06_00", when="@:v2_00_00")
+        depends_on("windriver@v16_05_00", when="@v2_01_00:")
+        ```
+        and specific requirements in conditional block
     * `spack edit sbndaq-suite`
     * `spack location -p sbndaq-suite`
 1. **Solved**
