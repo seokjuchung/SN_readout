@@ -99,3 +99,18 @@ Error now gone, but SN binary is not being saved
     * Issue of SN binaries not saving with SNcomm source code
     * Need separate `DumpSNBinary` entry to enable
     * Refer to `/home/nfs/sbnd/DAQ_fcls_area/fcl_configs_run2/sbnd-daq-fcls/run2-beam-SN-` if needed
+
+
+# 2026-01-05: `v2_00_00` summary and plans
+1. Two issues with `v2_00_00`
+    1. XMIT report showing 0s
+        * This got somehow fixed after rerunning
+        * Still mismatch between `trigger received` and `packed event`, This doesn't appear in `v1_10_08`
+    1. Empty SN binaries, only header information
+1. Tried to use `v2_00_00` as it has Summer 2025 SN updates
+    1. SN binary subfile savings
+    1. `signalLike` fake data pattern
+1. TODO
+    1. Build area with `v1_10_08`
+    1. Only implement `signalLike` and subfile savings
+    1. Check if two issues above persist or go away
