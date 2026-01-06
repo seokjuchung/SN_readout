@@ -114,4 +114,6 @@ Error now gone, but SN binary is not being saved
     1. Build area with `v1_10_08`
     1. Only implement `signalLike` and subfile savings
     1. Check if two issues above persist or go away
-    1. Try `v1_10_09`
+    1. Try `v1_10_09` --> Same errors as `v2_00_00`
+
+
