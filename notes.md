@@ -117,3 +117,9 @@ Error now gone, but SN binary is not being saved
     1. Try `v1_10_09` --> Same errors as `v2_00_00`
 
 
+# 2026-01-16: Build SPACK DAQ with Production DAQ
+1. Found that shifter change branch does exist
+    1. `sbndaq` in `sbnd/shift_v1_10_08_pmtmetric_tpcgrafana`
+    1. `sbndaq-artdaq` in `sbnd/shift_v1_10_08_pmtmetric_tpcgrafana`
+    1. `sbndaq-artdaq-core` in `sbnd/shift_v1_10_08_pmtmetric_tpcgrafana`
+    1. `wibtools` in `sbnd/shift_v1_10_08`
