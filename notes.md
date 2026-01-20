@@ -123,3 +123,11 @@ Error now gone, but SN binary is not being saved
     1. `sbndaq-artdaq` in `sbnd/shift_v1_10_08_pmtmetric_tpcgrafana`
     1. `sbndaq-artdaq-core` in `sbnd/shift_v1_10_08_pmtmetric_tpcgrafana`
     1. `wibtools` in `sbnd/shift_v1_10_08`
+
+# 2026-01-20: Meeting with Chi
+1. Decrease write speed?
+    1. Every other DMA?
+    1. 20 samples * 2 sample * 64 Ch * 3 FEM * 1/2 ms
+1. Why does SN rate drop? Primary cause of issues
+1. New XMIT code
+1. Run SN only
